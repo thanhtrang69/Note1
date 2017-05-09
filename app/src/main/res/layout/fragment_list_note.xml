@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_write_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" />
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_weight="3.00"></DatePicker>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Menu Color :"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_red"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:contentDescription="#ffcc0000" />
+
+        <Button
+            android:id="@+id/bt_green"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:contentDescription="#ff669900" />
+
+        <Button
+            android:id="@+id/bt_purple"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:contentDescription="#ffaa66cc" />
+
+        <Button
+            android:id="@+id/bt_orange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:contentDescription="#ffffbb33" />
+
+        <Button
+            android:id="@+id/bt_blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:contentDescription="#ff0099cc" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_save_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Create Note"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</LinearLayout>
